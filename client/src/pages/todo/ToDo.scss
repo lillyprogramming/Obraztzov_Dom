@@ -1,0 +1,88 @@
+$yellow: #f7f4c4;
+
+.todo-app {
+    width: 100vw;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0;
+    h1 {
+      color: #333;
+    }
+  
+    .tasks, .family-tasks{
+      ul {
+        list-style: none;
+        padding: 0;
+  
+        li {
+          margin: 0.5em 0;
+          padding: 0.7em;
+          border-radius: 0.5em;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+  
+          button {
+            background-color: #D54751;
+            color: #fff;
+            border: none;
+            padding: 6px 12px;
+            margin-left: 10em;
+            cursor: pointer;
+            border-radius: 0.3em;
+          }
+        }
+      }
+    }
+    .family-tasks {
+      background-color: $yellow;
+      border-radius: 0.5em;
+      padding: 1em;
+      li {
+        background-color: white;
+      }
+    }
+    .parentTodoOptions, .add-task {
+      display: flex;
+      flex-direction: column ;
+    }
+    .startIn, .endIn {
+      display: flex;
+      justify-content: center;
+      margin: 1em 0em;
+    }
+    .add-task {
+      background-color: white;
+      border-radius: 0.5em;
+      padding: 5em;
+      input {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-right: 8px;
+      }
+  
+      button {
+        background-color: #79C39E;
+        color: #fff;
+        border: none;
+        padding: 1em 3em;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      @media only screen and (max-width: 1200px) { 
+        flex-wrap: wrap;
+      }
+    }
+    .taskList {
+      display:flex;
+      flex-direction: column;
+      background-color: white;
+      border-radius: 0.5em;
+      padding: 5em;
+    }
+  }

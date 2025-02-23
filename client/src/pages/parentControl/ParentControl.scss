@@ -1,0 +1,117 @@
+$yellow: #FFFCC7;
+$blue: #4DA394;
+$orange: #EF9A48;
+$red: #D54751;
+
+
+.parent-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $yellow;
+  header {
+    text-align: center;
+    color: $blue;
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+  }
+  body {
+    background-color: $yellow;
+  }
+  table {
+    min-width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    thead {
+      background-color: $blue;
+      color: white;
+      border:0.01em solid white;
+  
+      th {
+        padding: 12px;
+        text-align: left;
+      }
+    }
+  
+    tbody {
+      border:0.01em solid white;
+      tr {
+          border:0.01em solid white;
+        td {
+          padding: 0.5em;
+          div[contenteditable="true"], .emailDiv {
+            min-width: 4em;
+            padding: 5px;
+            border: none;
+            outline: none;
+            border-radius: 0.5em;
+            background-color: white;
+          }
+  
+          button {
+            background-color: $red;
+            color: white;
+            padding: 1em 0.7em;
+            border-radius: 0.5em;
+            border: none;
+            margin-right: 5px;
+  
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+          button:hover {
+            background-color: darken($red, 10%);
+          }
+        }
+      }
+    }
+  } 
+  .famInfo{
+    border: 0.1em solid $orange;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    max-width: 100%;
+    button {
+      margin-left: 1em;
+      background-color: #4DA394;
+      border: none;
+      color: white;
+      border-radius: 0.5em;
+      padding: 0.5em;
+    }
+    button:hover {
+      background-color: darken($blue, 10%);
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .parent-con {
+    tbody,
+    tr,
+    th,
+    td {
+      display: block;
+    }
+  
+    tr {
+      border: 1px solid #ddd;
+    }
+  
+    td,
+    th {
+      display: flex;
+      flex-direction: column;
+      border: none;
+      padding: 5px;
+    }
+    table {
+      button {
+        margin: 0.1em;
+        width: 100%;
+      }
+    }
+  }
+}

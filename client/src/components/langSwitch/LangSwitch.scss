@@ -1,0 +1,12 @@
+.langSwitch {
+    button {
+    border: none;
+    background-color: #D54751;
+    color: #fff;
+    padding: 0.7em 1.1em;
+    margin-left: 0em;    
+    }
+    button:hover {
+        background-color: darken(#D54751, 10%);
+    }
+}
